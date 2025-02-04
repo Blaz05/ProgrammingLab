@@ -1,0 +1,1 @@
+print('Eno malo pivo prosim')
