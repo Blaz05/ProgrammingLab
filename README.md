@@ -1,1 +1,1 @@
-# ProgLab
+# ProgrammingLab
