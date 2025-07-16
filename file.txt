@@ -1,3 +1,4 @@
 International Morse code! A dash is equal to three dots.  
 The space between parts of the same letter is equal to one dot?
 The space between two letters is equal to three dots, the space between two words is equal to five dots.
+
