@@ -3,9 +3,9 @@
 
 import datetime
 
-giorno = input('Inserisci il giorno di nascita: ').strip()
-mese = input('Inserisci il mese di nascita: ').strip()
-anno = input("Inserisci l'anno di nascita: ").strip()
+giorno = input('Inserisci la data di nascita (solo il giorno): ').strip()
+mese = input('Inserisci il mese di nascita (solo il mese): ').strip()
+anno = input("Inserisci l'anno di nascita (solo l'anno): ").strip()
 print("Data di nascita: {}/{}/{}".format(giorno, mese, anno))
 try:
     giorno = int(giorno)
