@@ -26,6 +26,6 @@ else:
             print("Età: {}".format(età))
             compleanno = datetime.datetime(2026, mese, giorno, 0,0,0)
             differenza = compleanno - now
-        print("Fino al prossimo compleanno: {}".format(differenza))
+        print("Fino al prossimo compleanno mancano: {} (ore, minuti, secondi, milionesimi)".format(differenza))
     else:
         raise ValueError("Inserire valori reali.")
