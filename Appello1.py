@@ -54,7 +54,7 @@ def compute_variations(time_series, first_year, last_year, N):
     for anno in temp_per_anno.keys():
         temp_medie[anno] = sum(temp_per_anno[anno])/len(temp_per_anno[anno])
     
-    '''Creo un ulteriore dizionario per calolcolare la variazione tra gli anni inseriti'''
+    '''Creo un ulteriore dizionario per calcolare la variazione tra gli anni inseriti'''
     variazioni = {}
     for anno in range(first_year, last_year + 1):
         if anno not in temp_medie:
@@ -70,9 +70,7 @@ def compute_variations(time_series, first_year, last_year, N):
         if len(medie_prec) == N:
             media_mobile = sum(medie_prec) / N
             variazioni[anno] = temp_medie[anno] - media_mobile
-        else:
-            continue    # non ci sono abbastanza dati per calcolare la media mobile
     
     return variazioni
 
-print(compute_variations(time_series,1900,1904,3))
+print(compute_variations(time_series,1900,1910,3))
