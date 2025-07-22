@@ -15,14 +15,17 @@ class MovingAverage:
             float_list = []
             for el in lista:
                 float_list.append(float(el))
+            """Media mobile!!!"""
             for i in range(len(float_list) - self.N + 1):
-                N_values = float_list[i:i + self.N]
+                N_values = float_list[i:(i + self.N)]
+                #print(N_values)
                 average = sum(N_values) / self.N
+                #print(average)
                 media_mobile.append(average)
         except:
             raise ExamException("Fornire elementi numerici validi.")
         return media_mobile
 
-moving_average = MovingAverage(3)
-result = moving_average.compute([2,4,8,16,32,64,128,256,512]) 
+moving_average = MovingAverage(2)
+result = moving_average.compute([2,4,8,16]) 
 print(result) # Deve stampare a schermo [3.0,6.0,12.0]
